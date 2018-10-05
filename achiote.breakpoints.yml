@@ -1,0 +1,21 @@
+achiote.example.sm:
+  label: Small
+  mediaQuery: ''
+  weight: 0
+  group: Example Image Group
+  multipliers:
+    - 1x
+achiote.example.md:
+  label: Medium
+  mediaQuery: '(min-width: 768px)'
+  weight: 1
+  group: Example Image Group
+  multipliers:
+    - 1x
+achiote.example.lg:
+  label: Large
+  mediaQuery: '(min-width: 1168px)'
+  weight: 2
+  group: Example Image Group
+  multipliers:
+    - 1x
