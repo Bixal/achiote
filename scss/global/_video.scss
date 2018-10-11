@@ -1,0 +1,14 @@
+// We make embedded iframes responsive
+
+.movie-wrapper { // Feel free to rename this class
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.movie-wrapper iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

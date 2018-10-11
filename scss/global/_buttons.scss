@@ -1,0 +1,16 @@
+// Button styles.
+.btn {
+  border: none;
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-image: none;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+
+  }
+}

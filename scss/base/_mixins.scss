@@ -1,0 +1,36 @@
+// Variables for the breakpoints are in the _variables partial
+// Example:
+// .foo {
+//   width: 100%;
+//   @include breakpoint($bp-sm) {
+//     width: 50%;
+//   }
+// }
+@mixin breakpoint($bp) {
+  @media (min-width: #{$bp}) {
+    @content;
+  }
+}
+
+// Icons
+@mixin icon($icon) {
+  @extend %icon;
+  content: $icon;
+}
+
+// Gradients
+// Autoprefixer will add all the many other versions
+@mixin gradient-vert($color1, $color2) {
+  background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}
+
+@mixin gradient-hor($color1, $color2) {
+  background: linear-gradient(to right, $color1 0%, $color2 100%);
+}
+
+// Placeholder text
+@mixin placeholder {
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
