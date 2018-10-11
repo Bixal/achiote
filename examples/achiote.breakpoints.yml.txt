@@ -1,3 +1,6 @@
+# Use themename.breakpoints.yml to declare breakpoints for use in responsive
+# images. See https://www.drupal.org/docs/8/theming-drupal-8/working-with-breakpoints-in-drupal-8
+# for full documentation.
 achiote.example.sm:
   label: Small
   mediaQuery: ''
