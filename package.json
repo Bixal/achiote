@@ -1,0 +1,17 @@
+{
+  "name": "achiote",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.2.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-iconfont": "^10.0.2",
+    "gulp-iconfont-css": "^2.3.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
