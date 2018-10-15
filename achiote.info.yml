@@ -3,6 +3,9 @@ type: theme
 description: "Bixal's Drupal 8 starter theme."
 core: 8.x
 base theme: false
+libraries:
+  - achiote/global-styling
+  - achiote/global-scripts
 regions:
   header: Header
   content: Content
