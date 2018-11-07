@@ -1,14 +1,28 @@
-// Variables for the breakpoints are in the _variables partial
+// Mixins
+
 // Example:
 // .foo {
 //   width: 100%;
-//   @include breakpoint($bp-sm) {
+//   @include bp(sm) {
 //     width: 50%;
 //   }
 // }
-@mixin breakpoint($bp) {
-  @media (min-width: #{$bp}) {
-    @content;
+@mixin bp($breakpoint) {
+  // Goes to $breakpoints map and gets each $breakpoint value (if it has any)
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    // Create media query based on that $breakpoint value
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+
+  }
+  @else {
+    // sass-lint:disable no-warn
+    // Preventing the linter from interpretting this as a warning just
+    // beacuse it exists in this file, haha.
+    @warn "Breakpoint doesn't exist; please check breakpoints map.";
+    // sass-lint:enable no-warn
   }
 }
 

@@ -1,5 +1,6 @@
 // Global form styling should go here.
 // Styling for individual forms those should go in their own partials.
+
 input,
 textarea {
   -webkit-appearance: none;
@@ -46,6 +47,7 @@ label {
 
 }
 
+// sass-lint:disable no-important
 fieldset {
   min-width: 0 !important; // Override for Firefox silliness
 }

@@ -7,10 +7,16 @@
   text-decoration: none;
   background-image: none;
   white-space: nowrap;
+  touch-action: manipulation;
   cursor: pointer;
+  user-select: none;
 
   &:hover,
   &:focus {
+
+  }
+
+  &:active {
 
   }
 }
