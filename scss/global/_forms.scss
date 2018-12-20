@@ -1,6 +1,39 @@
 // Global form styling should go here.
 // Styling for individual forms those should go in their own partials.
 
+// Correct increment/decrement buttons in Safari.
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; // Fix offset in Safari.
+}
+
+// Remove inner padding in Chrome & Safari on MacOS.
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+input,
+optgroup,
+select,
+textarea {
+  // Normalize font styles in browsers.
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  // Remove margin in Firefox & Safari.
+  margin: 0;
+}
+
 input,
 textarea {
   -webkit-appearance: none;
@@ -16,11 +49,9 @@ textarea {
   }
 
   &:focus {
-
   }
 
   &:active {
-
   }
 }
 
@@ -35,7 +66,7 @@ input[type="radio"] {
 }
 
 select {
-
+  text-transform: none;
 }
 
 input[type="submit"],
@@ -44,16 +75,20 @@ button {
 }
 
 label {
-
 }
 
 // sass-lint:disable no-important
 fieldset {
   min-width: 0 !important; // Override for Firefox silliness
+  padding: 0.35em 0.75em 0.625em; // Correct padding in Firefox.
 }
 
 legend {
+  padding: 0;
+}
 
+progress {
+  vertical-align: baseline;
 }
 
 // Probably some styling for error (and/or success) messages too
