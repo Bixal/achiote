@@ -12,8 +12,8 @@ $c-whatever: #ff0000; // RGB 255, 0, 0
 $social-colors: (
   twitter: #4099ff,
   linkedin: #0077b5,
-  facebook: #3B5998,
-  googleplus: #C63D2D,
+  facebook: #3b5998,
+  googleplus: #c63d2d,
   pinterest: #cb2027,
   youtube: #cd201f,
   instagram: #fb3958
@@ -22,9 +22,11 @@ $social-colors: (
 // Font-related variables
 // Font variables should start with 'font-'
 // Replace any/all values as appropriate, delete any you aren't using
-$font-family-serif: 'Georgia', serif;
-$font-family-sans: 'Helvetica', sans-serif;
-$font-family-icons: 'icons';
+$font-family-serif: "Georgia", serif;
+$font-family-sans: "Helvetica", sans-serif;
+$font-family-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+  monospace;
+$font-family-icons: "icons";
 
 $font-size-base: 16; // The default font size for your site. This gets used in
 // the px-to-em() function used sitewide.
