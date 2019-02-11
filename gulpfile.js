@@ -177,4 +177,3 @@ gulp.task(
 );
 
 gulp.task("default", gulp.parallel("build-styles", "browser-sync", "watch"));
-// @todo add a build task - will need to rethink where reload is being called
