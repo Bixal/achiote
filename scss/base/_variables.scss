@@ -12,8 +12,7 @@ $c-whatever: #ff0000; // RGB 255, 0, 0
 $social-colors: (
   twitter: #4099ff,
   linkedin: #0077b5,
-  facebook: #3B5998,
-  googleplus: #C63D2D,
+  facebook: #3b5998,
   pinterest: #cb2027,
   youtube: #cd201f,
   instagram: #fb3958
@@ -33,6 +32,7 @@ $font-weight-bold: 700; // Usually
 
 // Breakpoints
 // Used in bp mixin in _mixins.scss
+// Adjust as needed
 $breakpoints: (
   sm: px-to-rem(480),
   md: px-to-rem(768),
