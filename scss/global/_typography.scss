@@ -4,6 +4,8 @@ html {
   // You should ALWAYS have this line, unchanged.
   // The px-to-rem function depends on it.
   font-size: ($font-size-base/16) * 100%;
+  // Normalize line-height in all browsers.
+  line-height: 1.15;
   // Prevent adjustments of font size after orientation changes in iOS
   -webkit-text-size-adjust: 100%;
 }
@@ -14,62 +16,59 @@ body {
   // font-weight: $font-weight-normal;
   // line-height: 1.4;
   // color: $c-black;
+  margin: 0;
 }
 
 // Adding the h1-style, etc. classes for use in cases when the design doesn't
 // match what the tag ought to be, semantically.
 h1,
-.h1-style {
-
+%h1-style {
 }
 
 h2,
-.h2-style {
-
+%h2-style {
 }
 
 h3,
-.h3-style {
-
+%h3-style {
 }
 
 h4,
-.h4-style {
-
+%h4-style {
 }
 
 h5,
-.h5-style {
-
+%h5-style {
 }
 
 h6,
-.h6-style {
-
+%h6-style {
 }
 
-blockquote {
+blockquote,
+q {
+  quotes: none;
 
+  &::before,
+  &::after {
+    content: none;
+  }
 }
 
 cite {
-
 }
 
 code {
-
+  // font-family: $font-family-mono;
 }
 
 dl {
-
 }
 
 dt {
-
 }
 
 dd {
-
 }
 
 b,
@@ -87,7 +86,11 @@ u {
 }
 
 p {
+}
 
+ol,
+ul {
+  list-style: none;
 }
 
 // Prevents bullet styling applying to menus, etc.
@@ -100,20 +103,32 @@ p {
   @extend %numbers;
 }
 
+sub,
 sup {
   position: relative;
   font-size: 0.8em;
+  // Normalize line-height in all browsers.
+  line-height: 0;
+  vertical-align: bottom;
+}
+
+sup {
   top: -0.2em;
 }
 
 sub {
-  position: relative;
-  font-size: 0.8em;
   top: 0.2em;
 }
 
 small {
+}
 
+hr {
+  height: 0;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
 }
 
 // Undoing the ugly blue glow that defaults when you focus on a link or anything
@@ -123,13 +138,10 @@ small {
 }
 
 a {
-
   &:hover,
   &:focus {
-
   }
 
   &:focus {
-
   }
 }
