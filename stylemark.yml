@@ -1,14 +1,19 @@
 name: Your {{ProjectName}} Styleguide
+
 # Relative to theme path
 assets:
   - fonts
   - images
+
 # Where your theme CSS & JS are.
 examples:
   css:
-    - css/styles.min.css
+    # Your generated CSS.
+    - css/styles.css
   js:
-    - js/dist/main.js
+    - https://code.jquery.com/jquery-3.4.0.min.js
+    # - js/dist/main.js // Your Theme JS
+
 # Styleguide Theme
 theme:
   sidebar:
