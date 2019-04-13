@@ -1,0 +1,17 @@
+name: Your {{ProjectName}} Styleguide
+# Relative to theme path
+assets:
+  - fonts
+  - images
+# Where your theme CSS & JS are.
+examples:
+  css:
+    - css/styles.min.css
+  js:
+    - js/dist/main.js
+# Styleguide Theme
+theme:
+  sidebar:
+    # Change to project primary color.
+    background: "#DC392D"
+    textColor: "#fff"
