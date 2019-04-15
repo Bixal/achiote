@@ -64,16 +64,6 @@ gulp.task('scss', () => {
     .pipe(reload({ stream: true }));
 });
 
-gulp.task('styleguide', async done => {
-  stylemark({
-    input: 'scss/',
-    output: 'styleguide/',
-    configPath: 'stylemark.yml'
-  });
-  browserSync.reload();
-  done();
-});
-
 gulp.task('scsslint', () => {
   return gulp
     .src(paths.styles)
@@ -86,6 +76,16 @@ gulp.task('scsslint', () => {
     )
     .pipe(scsslint.format())
     .pipe(scsslint.failOnError());
+});
+
+gulp.task('styleguide', async done => {
+  stylemark({
+    input: 'scss/',
+    output: 'styleguide/',
+    configPath: 'stylemark.yml'
+  });
+  browserSync.reload();
+  done();
 });
 
 gulp.task('optimize-images', () => {
@@ -163,10 +163,10 @@ gulp.task('scripts', () => {
 // Browser Sync
 gulp.task('browser-sync', () => {
   browserSync({
-    // proxy: {
-    // Update this with your project's local url
-    // target: 'http://local.yourlocal.com'
-    // }
+    proxy: {
+      // Update this with your project's local url
+      target: 'localhost:3000/'
+    }
   });
 });
 
