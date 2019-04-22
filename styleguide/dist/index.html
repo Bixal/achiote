@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en-us" id="insta">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="_stylemark/css/all.css" rel="stylesheet">
+		<link rel="icon" href="" type="image/x-icon">
+
+		<!-- @todo Replace with custom icomoon/fontello bundle -->
+		<script src="https://use.fontawesome.com/6dd56ad32d.js"></script>
+
+		<title>Achiote Styleguide</title>
+
+			<link rel="stylesheet" href="styleguide/src/css/theme.css">
+	</head>
+	<body class="overflow-x-off i-page theme-page">
+		<div class="i-page__content theme-content">
+
+			<div class="i-nav-select theme-mobile-nav">
+				<form class="form">
+					<select class="form-control form-control-lg theme-mobile-nav-select">
+						<option disabled selected>Go to…</option>
+							<optgroup label="Getting Started">
+									<option value="getting-started">Getting Started</option>
+							</optgroup>
+							<optgroup label="Global">
+									<option value="buttons">Buttons</option>
+									<option value="forms">Forms</option>
+									<option value="tables">Tables</option>
+									<option value="typography">Typography</option>
+							</optgroup>
+					</select>
+				</form>
+			</div>
+
+				<div id="category-getting started" class="theme-content-category">
+						<div id="getting-started" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Getting Started</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">md/getting-started.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>There&#39;s a gulp task called <code>styelguide</code> that&#39;s run after styles have been updated
+and/or after the <code>styleguide/src/md/</code> files have been updated.</p>
+<p>It&#39;s highly recommended you update the styleguide&#39;s sidebar logo and colors to match your
+theme.</p>
+<p>You should also probably change this file to give a brief introduction to the project.</p>
+<div id="using-with-drupal" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-with-drupal" class="icon-link i-section__link -heading"></a>Using with Drupal</h2></div><p>There&#39;s this <a href="https://packagist.org/packages/bixal/style_guide_response">package</a>.
+That you can use with your drupal sites. But you have to rename your generated
+styleguide <code>index.html</code> to <code>style-guide.html</code>.</p>
+<div id="files" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#files" class="icon-link i-section__link -heading"></a>Files</h2></div><h5><code>Root:</code></h5><ul>
+<li><p><code>stylemark.yml</code></p>
+<p>Configuration file. You can update the styleguide logo, set theme
+assets from where it will generate the styleguide, order the
+styleguide links in the sidebar. You can also specify the assetes for the
+styleguide&#39;s theming.</p>
+</li>
+<li><p><code>styleguide/</code>
+Styleguide assets, dist contains generated code.</p>
+<ul>
+<li><p><code>dist/</code> <strong>Don&#39;t Modify</strong></p>
+</li>
+<li><p><code>src/</code></p>
+<ul>
+<li><p><code>css/</code></p>
+<p>Styleguide theming.</p>
+</li>
+<li><p><code>md/</code></p>
+<p>Markdown files where your styleguide components will live.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+				</div>
+				<div id="category-global" class="theme-content-category">
+						<div id="buttons" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Buttons</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">md/buttons.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Button styles.</p>
+<p>Typically:</p>
+<ul>
+<li>btn: Default button styles, serves as a base.</li>
+<li>btn--primary: Standard button.</li>
+<li>btn--secondary: Button for a secondary action.</li>
+<li>btn--inverse: Specifically tailored for dark backgrounds.</li>
+<li>btn--block: Always full-width button.</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="buttons-buttons.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="buttons-buttons.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;btn&quot;&gt;Base&lt;/button&gt;
+&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Base&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Base&lt;/a&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn&quot;&gt;Base&lt;/button&gt;
+&lt;input type=&quot;submit&quot; class=&quot;btn&quot; value=&quot;Base&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Base&lt;/a&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="forms" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Forms</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">md/forms.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Global form styles.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="forms-forms.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="forms-forms.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;form&gt;
+    &lt;label for=&quot;&quot;&gt;Search&lt;/label&gt;
+    &lt;input type=&quot;search&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Text&lt;/label&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;URL&lt;/label&gt;
+    &lt;input type=&quot;url&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Number&lt;/label&gt;
+    &lt;input type=&quot;number&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Date&lt;/label&gt;
+    &lt;input type=&quot;date&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Radio&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Reset&lt;/label&gt;
+    &lt;input type=&quot;reset&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Telephone&lt;/label&gt;
+    &lt;input type=&quot;tel&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Checkbox&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; /&gt;
+  &lt;label for=&quot;&quot;&gt;Textarea&lt;/label&gt;
+  &lt;textarea&gt;&lt;/textarea&gt;
+  &lt;label for=&quot;&quot;&gt;Select&lt;/label&gt;
+  &lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+    &lt;option value=&quot;option-1&quot;&gt;option-1&lt;/option&gt;
+    &lt;option value=&quot;option-2&quot;&gt;option-2&lt;/option&gt;
+    &lt;option value=&quot;option-3&quot;&gt;option-3&lt;/option&gt;
+    &lt;option value=&quot;option-4&quot;&gt;option-4&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;form&gt;
+    &lt;label for=&quot;&quot;&gt;Search&lt;/label&gt;
+    &lt;input type=&quot;search&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Text&lt;/label&gt;
+    &lt;input type=&quot;text&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Email&lt;/label&gt;
+    &lt;input type=&quot;email&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;URL&lt;/label&gt;
+    &lt;input type=&quot;url&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Number&lt;/label&gt;
+    &lt;input type=&quot;number&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Date&lt;/label&gt;
+    &lt;input type=&quot;date&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Radio&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Reset&lt;/label&gt;
+    &lt;input type=&quot;reset&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Telephone&lt;/label&gt;
+    &lt;input type=&quot;tel&quot; /&gt;
+    &lt;label for=&quot;&quot;&gt;Checkbox&lt;/label&gt;
+    &lt;input type=&quot;checkbox&quot; /&gt;
+  &lt;label for=&quot;&quot;&gt;Textarea&lt;/label&gt;
+  &lt;textarea&gt;&lt;/textarea&gt;
+  &lt;label for=&quot;&quot;&gt;Select&lt;/label&gt;
+  &lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+    &lt;option value=&quot;option-1&quot;&gt;option-1&lt;/option&gt;
+    &lt;option value=&quot;option-2&quot;&gt;option-2&lt;/option&gt;
+    &lt;option value=&quot;option-3&quot;&gt;option-3&lt;/option&gt;
+    &lt;option value=&quot;option-4&quot;&gt;option-4&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;input type=&quot;submit&quot; /&gt;
+&lt;/form&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="tables" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Tables</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">md/tables.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Global table styles.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="tables-tables.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="tables-tables.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;table&gt;
+  &lt;caption&gt;Clients:&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;col&quot;&gt;First Name&lt;/th&gt;
+    &lt;th scope=&quot;col&quot;&gt;Last Name&lt;/th&gt;
+    &lt;th scope=&quot;col&quot;&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;James&lt;/td&gt;
+    &lt;td&gt;Abby&lt;/td&gt;
+    &lt;td&gt;Daniel&lt;/td&gt;
+    &lt;td&gt;Lindsey&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jebediah&lt;/td&gt;
+    &lt;td&gt;Ipsum&lt;/td&gt;
+    &lt;td&gt;Arbz&lt;/td&gt;
+    &lt;td&gt;Gemms&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Los Angeles&lt;/td&gt;
+    &lt;td&gt;Guadalajara&lt;/td&gt;
+    &lt;td&gt;Washington D.C.&lt;/td&gt;
+    &lt;td&gt;New Orleans&lt;/td&gt;
+    &lt;td&gt;Atlanta&lt;/td&gt;
+&lt;/tr&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;table&gt;
+  &lt;caption&gt;Clients:&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th scope=&quot;col&quot;&gt;First Name&lt;/th&gt;
+    &lt;th scope=&quot;col&quot;&gt;Last Name&lt;/th&gt;
+    &lt;th scope=&quot;col&quot;&gt;City&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;James&lt;/td&gt;
+    &lt;td&gt;Abby&lt;/td&gt;
+    &lt;td&gt;Daniel&lt;/td&gt;
+    &lt;td&gt;Lindsey&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jebediah&lt;/td&gt;
+    &lt;td&gt;Ipsum&lt;/td&gt;
+    &lt;td&gt;Arbz&lt;/td&gt;
+    &lt;td&gt;Gemms&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Los Angeles&lt;/td&gt;
+    &lt;td&gt;Guadalajara&lt;/td&gt;
+    &lt;td&gt;Washington D.C.&lt;/td&gt;
+    &lt;td&gt;New Orleans&lt;/td&gt;
+    &lt;td&gt;Atlanta&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="typography" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Typography</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">md/typography.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Global typographic styles. Please try to use them in a logical and semantic order.
+For example, make sure h3&#39;s don&#39;t go before h1&#39;s.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="typography-typography.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="typography-typography.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;
+&lt;p&gt;Paragraph style. Lorem ipsum dolor sit, amet consectetur &lt;a href=&quot;#&quot;&gt;adipisicing&lt;/a&gt; elit. Molestiae incidunt porro eum aut eaque, molestias cum laboriosam amet odit autem.&lt;/p&gt;
+&lt;blockquote&gt;
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quaerat corporis corrupti unde iusto ratione?
+&lt;/blockquote&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Definitions List&lt;/dt&gt;
+  &lt;dd&gt;Words that define&lt;/dd&gt;
+  &lt;dd&gt;What the title&lt;/dd&gt;
+  &lt;dd&gt;Means and represents&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;a href=&quot;#&quot;&gt;Anchor links&lt;/a&gt;
+&lt;h3&gt;Lists&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Ordered list item 1&lt;/li&gt;
+  &lt;li&gt;Ordered list item 2&lt;/li&gt;
+  &lt;li&gt;
+    Ordered list item 3
+    &lt;ul&gt;
+      &lt;li&gt;Sublist item 1&lt;/li&gt;
+      &lt;li&gt;Sublist item 2&lt;/li&gt;
+      &lt;li&gt;Sublist item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ordered list item 4&lt;/li&gt;
+  &lt;li&gt;Ordered list item 5&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ordered list item 1&lt;/li&gt;
+  &lt;li&gt;Ordered list item 2&lt;/li&gt;
+  &lt;li&gt;
+    Ordered list item 3
+    &lt;ol&gt;
+      &lt;li&gt;Sublist item 1&lt;/li&gt;
+      &lt;li&gt;Sublist item 2&lt;/li&gt;
+      &lt;li&gt;Sublist item 3&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ordered list item 4&lt;/li&gt;
+  &lt;li&gt;Ordered list item 5&lt;/li&gt;
+&lt;/ul&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;h1&gt;Header 1&lt;/h1&gt;
+&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h3&gt;Header 3&lt;/h3&gt;
+&lt;h4&gt;Header 4&lt;/h4&gt;
+&lt;h5&gt;Header 5&lt;/h5&gt;
+&lt;h6&gt;Header 6&lt;/h6&gt;
+&lt;p&gt;Paragraph style. Lorem ipsum dolor sit, amet consectetur &lt;a href=&quot;#&quot;&gt;adipisicing&lt;/a&gt; elit. Molestiae incidunt porro eum aut eaque, molestias cum laboriosam amet odit autem.&lt;/p&gt;
+&lt;blockquote&gt;
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quaerat corporis corrupti unde iusto ratione?
+&lt;/blockquote&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Definitions List&lt;/dt&gt;
+  &lt;dd&gt;Words that define&lt;/dd&gt;
+  &lt;dd&gt;What the title&lt;/dd&gt;
+  &lt;dd&gt;Means and represents&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;a href=&quot;#&quot;&gt;Anchor links&lt;/a&gt;
+&lt;h3&gt;Lists&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Ordered list item 1&lt;/li&gt;
+  &lt;li&gt;Ordered list item 2&lt;/li&gt;
+  &lt;li&gt;
+    Ordered list item 3
+    &lt;ul&gt;
+      &lt;li&gt;Sublist item 1&lt;/li&gt;
+      &lt;li&gt;Sublist item 2&lt;/li&gt;
+      &lt;li&gt;Sublist item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ordered list item 4&lt;/li&gt;
+  &lt;li&gt;Ordered list item 5&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ordered list item 1&lt;/li&gt;
+  &lt;li&gt;Ordered list item 2&lt;/li&gt;
+  &lt;li&gt;
+    Ordered list item 3
+    &lt;ol&gt;
+      &lt;li&gt;Sublist item 1&lt;/li&gt;
+      &lt;li&gt;Sublist item 2&lt;/li&gt;
+      &lt;li&gt;Sublist item 3&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ordered list item 4&lt;/li&gt;
+  &lt;li&gt;Ordered list item 5&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+		</div>
+		<div
+			class="i-page__sidebar theme-sidebar"
+			style="background: #DC392D;color: #fff;"
+		>
+			<h1 class="i-sidebar-title h4 mt-4 theme-sidebar-header">
+					<img class="i-sidebar-logo mr-2 theme-sidebar-header-logo" src="logo.svg" height="40" alt="">
+				<span class="theme-sidebar-header-title">Achiote Styleguide</span>
+			</h1>
+			
+			<div class="relative mt-3 mb-2 px-0 theme-sidebar-search">
+				<div class="i-search-input">
+					<input id="search-filter" name="filter" type="search" placeholder="Search" class="form-control i-sidebar-item-filter">
+					<label for="search-filter" class="search-input-icon icon-search"></label>
+					<button type="button" class="i-search-input-reset" aria-label="Clear">
+						<i class="icon-cross"></i>
+					</button>
+				</div>
+			</div>
+			
+			<div class="theme-sidebar-categories">
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Getting Started "
+						>
+							<a href="#category-getting started" class="i-sidebar-list-item">
+								<b>Getting Started</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#getting-started"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Getting Started"
+								>
+									<span>Getting Started</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Buttons  Forms  Tables  Typography "
+						>
+							<a href="#category-global" class="i-sidebar-list-item">
+								<b>Global</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#buttons"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Buttons"
+								>
+									<span>Buttons</span>
+								</a>
+								<a
+									href="#forms"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Forms"
+								>
+									<span>Forms</span>
+								</a>
+								<a
+									href="#tables"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Tables"
+								>
+									<span>Tables</span>
+								</a>
+								<a
+									href="#typography"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Typography"
+								>
+									<span>Typography</span>
+								</a>
+						</div>
+			
+					</div>
+			</div>
+			
+			<div class="i-sidebar-filter-no-results i-muted i-pad-horiz-2 theme-sidebar-search-no-results">
+				No matches.
+			</div>
+			
+			<div class="row no-gutters mt-auto py-4 theme-sidebar-footer">
+				<span class="col">
+					Generated by <a href="https://github.com/nextbigsoundinc/stylemark">Stylemark</a>
+				</span>
+			</div>
+		</div>
+
+		<script src="_stylemark/js/vendor/jquery-3.2.1.slim.min.js"></script>
+		<script src="_stylemark/js/vendor/popper.min.js"></script>
+		<script src="_stylemark/js/vendor/tether.min.js"></script>
+		<script src="_stylemark/js/vendor/bootstrap.min.js"></script>
+		<script src="_stylemark/js/vendor/iframeResizer.min.js"></script>
+		<script src="_stylemark/js/vendor/lazyframe.min.js"></script>
+		<script src="_stylemark/js/vendor/highlight.min.js"></script>
+		<script src="_stylemark/js/vendor/clipboard.min.js"></script>
+		<script src="_stylemark/js/vendor/in-view.min.js"></script>
+		<script src="_stylemark/js/app.js"></script>
+
+	</body>
+</html>
