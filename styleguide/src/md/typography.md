@@ -41,17 +41,17 @@ For example, make sure h3's don't go before h1's.
 </ol>
 
 <ul>
-  <li>Ordered list item 1</li>
-  <li>Ordered list item 2</li>
+  <li>Unordered list item 1</li>
+  <li>Unordered list item 2</li>
   <li>
-    Ordered list item 3
+    Unordered list item 3
     <ol>
       <li>Sublist item 1</li>
       <li>Sublist item 2</li>
       <li>Sublist item 3</li>
     </ol>
   </li>
-  <li>Ordered list item 4</li>
-  <li>Ordered list item 5</li>
+  <li>Unordered list item 4</li>
+  <li>Unordered list item 5</li>
 </ul>
 ```
