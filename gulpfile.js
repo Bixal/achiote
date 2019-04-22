@@ -26,6 +26,7 @@ var fontName = 'icons';
 // Paths
 var paths = {
   styles: ['scss/**/*.scss'],
+  styleguide: ['styleguide/src/**/*'],
   scripts: ['js/*.js'],
   images: {
     src: './images/**/*',
@@ -80,8 +81,9 @@ gulp.task('scsslint', () => {
 
 gulp.task('styleguide', async done => {
   stylemark({
-    input: 'scss/',
-    output: 'styleguide/',
+    // Markdown files
+    input: 'styleguide/src',
+    output: 'styleguide/dist',
     configPath: 'stylemark.yml'
   });
   browserSync.reload();
@@ -179,6 +181,9 @@ gulp.task(
 
 gulp.task('watch', () => {
   gulp.watch(paths.styles, gulp.series('build-styles')).on('change', reload);
+  gulp
+    .watch(paths.styleguide, gulp.series('build-styles'))
+    .on('change', reload);
   gulp.watch(paths.scripts, gulp.series('build-scripts')).on('change', reload);
 });
 
