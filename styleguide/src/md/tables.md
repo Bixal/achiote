@@ -30,6 +30,5 @@ Global table styles.
     <td>Guadalajara</td>
     <td>Washington D.C.</td>
     <td>New Orleans</td>
-    <td>Atlanta</td>
 </tr>
 ```
