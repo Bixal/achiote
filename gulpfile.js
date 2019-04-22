@@ -181,10 +181,10 @@ gulp.task(
 
 gulp.task('watch', () => {
   gulp.watch(paths.styles, gulp.series('build-styles')).on('change', reload);
+  gulp.watch(paths.scripts, gulp.series('build-scripts')).on('change', reload);
   gulp
     .watch(paths.styleguide, gulp.series('build-styles'))
     .on('change', reload);
-  gulp.watch(paths.scripts, gulp.series('build-scripts')).on('change', reload);
 });
 
 gulp.task(
