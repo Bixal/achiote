@@ -1,19 +1,16 @@
-// Global form styling should go here.
-// Styling for individual forms those should go in their own partials.
-
 // Correct increment/decrement buttons in Safari.
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px; // Fix offset in Safari.
 }
 
 // Remove inner padding in Chrome & Safari on MacOS.
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -55,12 +52,12 @@ textarea {
   }
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   -webkit-appearance: checkbox;
   width: auto;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   -webkit-appearance: radio;
   width: auto;
 }
@@ -69,7 +66,7 @@ select {
   text-transform: none;
 }
 
-input[type="submit"],
+input[type='submit'],
 button {
   //probably start by extending .btn
 }

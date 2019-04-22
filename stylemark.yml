@@ -1,0 +1,30 @@
+name: Achiote Styleguide
+
+# Relative to theme path
+assets:
+  - fonts
+  - images
+
+# Where your theme CSS & JS are.
+examples:
+  css:
+    # Your generated CSS.
+    - css/styles.css
+  js:
+    - https://code.jquery.com/jquery-3.4.0.min.js
+    # - js/dist/main.js // Your Theme JS
+
+# Styleguide Theme
+theme:
+  logo: logo.svg
+  css:
+    - styleguide/src/css/theme.css
+  sidebar:
+    # Change to project primary color.
+    background: "#DC392D"
+    textColor: "#fff"
+
+order:
+  - +Getting Started
+  - +Global
+  - +Components
