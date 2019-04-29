@@ -18,10 +18,13 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync'),
   reload = browserSync.reload,
   beeper = require('beeper'),
+  pa11y = require('pa11y'),
   runTimestamp = Math.round(Date.now() / 1000);
 
 // Prefix with project code
 var fontName = 'icons';
+
+var project_url = 'your-project-url';
 
 // Paths
 var paths = {
@@ -167,8 +170,19 @@ gulp.task('browser-sync', () => {
   browserSync({
     proxy: {
       // Update this with your project's local url
-      target: 'localhost:3000/'
+      target: project_url
     }
+  });
+});
+
+// Accessibility testing
+gulp.task('test-accessibility', () => {
+  return pa11y(project_url, {
+    standard: 'Section508',
+    userAgent: 'A11Y TESTS',
+    timeout: 4000
+  }).then(results => {
+    results.issues.length ? log(results) : log('Congrats, no issues found!');
   });
 });
 
