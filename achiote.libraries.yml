@@ -6,14 +6,16 @@ global-styling:
       # You will (probably) use an external font library; adjust the line below as needed
       # //fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i: { type: external, minified: true }
 
-global-scripts:
-  version: 1.x
-  js:
-    # js/some-file.js: {}
-    # js/some-other-file.js: {}
-  dependencies:
-    - core/drupal
-    - core/jquery
-    - core/jquery.once
+# When you're ready to add some js, uncomment lines 10-18 below, replace lines
+# 14-15 with your file paths, and uncomment line 8 in achiote.info
+# global-scripts:
+#   version: 1.x
+#   js:
+#     # js/some-file.js: {}
+#     # js/some-other-file.js: {}
+#   dependencies:
+#     - core/drupal
+#     - core/jquery
+#     - core/jquery.once
     # You will almost certainly need the three above; remove or uncomment line below as needed
     # - core/drupal.debounce
